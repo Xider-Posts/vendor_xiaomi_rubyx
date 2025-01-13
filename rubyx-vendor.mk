@@ -1383,6 +1383,7 @@ PRODUCT_PACKAGES += \
     libcameracustom.flashlight \
     libcameracustom.lens \
     libcameracustom \
+    libcamlog \
     libcares_naptr \
     libcarrierconfig \
     libccci_util \
@@ -1397,6 +1398,11 @@ PRODUCT_PACKAGES += \
     libcodec2_soft_mtk_mp3dec \
     libcodec2_soft_mtk_msadpcmdec \
     libcodec2_vpp_dolby_plugin \
+    libcom.xiaomi.debug \
+    libcom.xiaomi.eventcallback \
+    libcom.xiaomi.grallocutils \
+    libcom.xiaomi.metadatautils \
+    libcom.xiaomi.pluginutils \
     libcomposer_ext \
     libconnfem \
     libdip_drv \
@@ -1462,6 +1468,7 @@ PRODUCT_PACKAGES += \
     libmipc \
     libmiphone_capture_bokeh \
     libmiphone_preview_bokeh \
+    libmivimemutils \
     libmlipay_isee \
     libmlipay_isee@1.1 \
     libmml \
@@ -1564,6 +1571,7 @@ PRODUCT_PACKAGES += \
     libpqparamparser \
     libpqpconfig \
     libratconfig \
+    librelight_only \
     librilfusion \
     libsensor_custom \
     libstereoinfoaccessor_vsdof \

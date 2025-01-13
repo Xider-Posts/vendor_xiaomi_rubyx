@@ -14675,8 +14675,8 @@ cc_prebuilt_library_shared {
 		},
 	},
 	compile_multilib: "64",
-	prefer: true,
 	check_elf_files: false,
+	prefer: true,
 	soc_specific: true,
 }
 
@@ -14919,6 +14919,24 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "libcom.xiaomi.debug",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libcom.xiaomi.debug.so"],
+			shared_libs: [],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "libcom.xiaomi.eventcallback",
 	owner: "xiaomi",
 	strip: {
@@ -14927,12 +14945,12 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libcom.xiaomi.eventcallback.so"],
-			shared_libs: ["libutils", "libcutils", "liblog", "libcom.xiaomi.debug", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: [],
 		},
 	},
 	compile_multilib: "64",
-	prefer: true,
 	check_elf_files: false,
+	prefer: true,
 	soc_specific: true,
 }
 
@@ -14945,12 +14963,12 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libcom.xiaomi.grallocutils.so"],
-			shared_libs: ["libc++", "libcutils", "liblog", "libsync", "libhidlbase", "libhidltransport", "libui", "libcamera_metadata", "libutils", "libc", "libm", "libdl", ],
+			shared_libs: [],
 		},
 	},
 	compile_multilib: "64",
-	prefer: true,
 	check_elf_files: false,
+	prefer: true,
 	soc_specific: true,
 }
 
@@ -14963,12 +14981,12 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libcom.xiaomi.metadatautils.so"],
-			shared_libs: ["libutils", "libcutils", "liblog", "libcamera_metadata", "libcom.xiaomi.debug", "libmtkcam_metaconv", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: [],
 		},
 	},
 	compile_multilib: "64",
-	prefer: true,
 	check_elf_files: false,
+	prefer: true,
 	soc_specific: true,
 }
 
@@ -14981,12 +14999,12 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libcom.xiaomi.pluginutils.so"],
-			shared_libs: ["liblog", "libutils", "libcutils", "libcamera_metadata", "libcom.xiaomi.debug", "libcom.xiaomi.metadatautils", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: [],
 		},
 	},
 	compile_multilib: "64",
-	prefer: true,
 	check_elf_files: false,
+	prefer: true,
 	soc_specific: true,
 }
 
@@ -16040,8 +16058,8 @@ cc_prebuilt_library_shared {
 		},
 	},
 	compile_multilib: "64",
-	prefer: true,
 	check_elf_files: false,
+	prefer: true,
 	soc_specific: true,
 }
 
@@ -16109,8 +16127,8 @@ cc_prebuilt_library_shared {
 		},
 	},
 	compile_multilib: "64",
-	prefer: true,
 	check_elf_files: false,
+	prefer: true,
 	soc_specific: true,
 }
 
@@ -17857,12 +17875,12 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/librelight_only.so"],
-			shared_libs: ["libGLESv3", "libEGL", "liblog", "libc++_shared", "libm", "libdl", "libc", ],
+			shared_libs: [],
 		},
 	},
 	compile_multilib: "64",
-	prefer: true,
 	check_elf_files: false,
+	prefer: true,
 	soc_specific: true,
 }
 
@@ -19638,11 +19656,12 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/system_ext/lib64/libsink.so"],
-			shared_libs: ["libaudioclient_shim", "libbinder", "libcutils", "libgui", "libmedia", "libstagefright", "libstagefright_foundation", "libui", "libutils", "libcomutils", "libvcodec_cap", "libvt_avsync", "liblog", "libmedia_omx", "libaudioclient", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libbinder", "libcutils", "libgui", "libmedia", "libstagefright", "libstagefright_foundation", "libui", "libutils", "libcomutils", "libvcodec_cap", "libvt_avsync", "liblog", "libmedia_omx", "libaudioclient", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
 	prefer: true,
+	check_elf_files: false,
 	system_ext_specific: true,
 }
 
